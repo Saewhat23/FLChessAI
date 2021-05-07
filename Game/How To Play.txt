@@ -1,0 +1,21 @@
+Fuzzy Logic Chess AI
+By: Brendon Im
+Nicholas Carmichael
+Parsa Kashefi
+Will Patterson
+Yassine Salimi
+---------------------------------
+Rules: Similar to actual chess, Take the king to Win.
+Name changes: Bishop -> Pikeman, Rook -> Archer
+1. Squadrons: Each piece belongs to a squadron, commanded by either the King, or the Left or Right Pikeman denoted by the colored dot on the bottom right of the piece.
+	- Each Squadron can move a piece, granting a maximum of 3 moves a turn.
+	- If a Pikeman is taken, then the Lost Pikeman's squadron falls under the command of the King, and the player who loses the Pikeman also loses a move in their turn.
+2. Delegations: The King can delegate any of their pieces to another squadron for that turn, preserving the move of the King's Squadron at the cost of another.
+3. Moving and Capturing: Depending on the pieces that are attacking or defending against each other, the attacker must roll a die and achieve at least the number on the right side of the screen.
+	- If the roll is sufficient, the attacking piece captures the defender and moves to that location,  unless the Archer is the attacker, in which case the Archer remains in place.
+	- The requirements of the attacker's roll can be seen when the attacking piece is hovering over the potential defender.
+	- The movements for each piece are as follows:
+		-  Pawn + Pikeman: Move in any FORWARD direction 1 space.
+		- Archer: Move in any direction 1 space. Can attack from 3 spaces away.
+		- Knight: Move in any direction 5 spaces. If NOT attacking from a nearby square, the cost of the roll is higher by 1 (If the roll needs higher than a 6, it is impossible).
+		- King & Queen: Move in any direction 3 spaces. Can only attack nearby squares.
